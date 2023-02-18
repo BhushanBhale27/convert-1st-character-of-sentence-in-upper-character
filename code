@@ -1,0 +1,27 @@
+let sentence = " bhushan is a great person in world "
+// split by spaces
+let words = sentence.split(" ");
+  let capitalizedSentence = "";
+//for loop 
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    console.log(word);
+    let capitalizedWord = "";
+    for (let j = 0; j < word.length; j++) {
+      if (j === 0) {
+        capitalizedWord += word[j].toUpperCase();
+      } else {
+        capitalizedWord += word[j];
+      }
+    }
+    capitalizedSentence += capitalizedWord + " ";
+  }
+ console.log(capitalizedSentence.trim());
+console.log(words);
+console.log(words.length);
+
+
+
+ 
+    
+  
